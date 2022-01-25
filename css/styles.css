@@ -1,0 +1,270 @@
+/* Import Font */
+
+/* Root */
+:root {
+  --blue: #789ace;
+  --blue-dark: #4c67d1;
+  --grey: #f6f6f6;
+  --grey-dark: #9f9c99;
+}
+
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+/* TYPOGRAPHY */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+}
+
+/* LAYOUT */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100vw;
+  margin-top: 42px;
+  background-color: var(--blue);
+}
+
+main {
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+  width: 100%;
+  padding: 32px 56px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pricing:hover {
+  background-color: var(--grey);
+}
+
+.pricing__image {
+  width: 30%;
+  min-width: 64px;
+  margin-bottom: 16px;
+}
+
+.pricing__description {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--grey-dark);
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+.pricing__price {
+  display: flex;
+  color: var(--blue-dark);
+  font-weight: 700;
+  position: relative;
+}
+
+.pricing__price p:nth-of-type(2) {
+  font-size: 2.5rem;
+  align-self: flex-end;
+}
+
+.pricing__price p:last-of-type {
+  font-size: 12px;
+  align-self: flex-end;
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer img {
+  width: 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .pricing {
+    row-gap: 16px;
+    padding: 32px;
+  }
+
+  .pricing__image {
+    width: 25%;
+    margin-bottom: 8px;
+  }
+}
+
+/* REFERAL CROLWEB */
+
+.referal {
+  position: fixed;
+  bottom: 0;
+}
+
+.referal img {
+  width: 50px;
+}
